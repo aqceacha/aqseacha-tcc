@@ -1,0 +1,7 @@
+{
+  "name": "aqseachatcc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
