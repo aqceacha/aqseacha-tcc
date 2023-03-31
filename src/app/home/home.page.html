@@ -1,10 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-icon name="menu-outline" slot="start"></ion-icon>
-    <img src="assets/Tema Claro.png" alt="" class="imgprincipal">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <div class="align">
+      <img src="assets/Tema Claro.png" alt="" class="imgprincipal" >
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-searchbar animated="true" placeholder="Pesquisar" show-clear-button="focus"  expand="block"></ion-searchbar>
+
+  <div class="slider">
+    <li>
+      <input type="radio" id="slide1" name="slide" checked>
+      <label for="slide1"></label>
+      <img src="https://i.pinimg.com/564x/a7/e8/44/a7e84441ac0fffa67bf586c499aed41d.jpg" />
+</li>
+<li>
+      <input type="radio" id="slide2" name="slide">
+      <label for="slide2"></label>
+      <img src="https://i.pinimg.com/564x/cf/55/56/cf5556c1266af6a9dacc5f3d3252fcdf.jpg" />
+</li>
+<li>
+      <input type="radio" id="slide3" name="slide">
+      <label for="slide3"></label>
+      <img src="https://i.pinimg.com/564x/33/16/b2/3316b22964e0f58fe77b84d427507fa9.jpg" />
+</li>
+  </div>
 
 </ion-content>
