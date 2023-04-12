@@ -1,40 +1,50 @@
-ion-toolbar{
-  --padding-end: 2rem
+///ion-menu
+
+
+.iconhelp {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  margin-left: 60vw;
+  margin-top: 5vw;
 }
 
-.imgprincipal{
+.avatar {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50px;
+  margin-top: 5vw;
+}
+
+.endereco {
+  width: 200px;
+  --background: #14a686;
+  font-size: 4.8vw;
+}
+
+.endereco ion-icon {
+  font-size: 5vw;
+}
+
+///ion-toolbar
+
+ion-toolbar {
+  --padding-end: 2rem;
+}
+
+.logo {
   width: 12vw;
-  height: 12vw ;
+  height: 12vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.align{
+.imgtoolbar {
   margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ion-searchbar{
- padding: 5%;
-
- }
-
- body{
-  text-align: center;
- }
-
- .img1{
-  width: 40vw;
-  height: 35vw;
-  margin: 10%;
- }
-
- .img2{
-  width: 40vw;
-  height: 35vw;
-  margin: 10%;
- }
-
+///ion-content

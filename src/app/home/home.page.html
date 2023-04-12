@@ -1,14 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>
-    </ion-buttons>
-    <div class="align">
-      <img src="assets/Tema Claro.png" alt="" class="imgprincipal" >
-    </div>
-  </ion-toolbar>
-</ion-header>
+<ion-menu contentId="main-content"  type="overlay">
+  <ion-content class="ion-padding ">
+    <ion-icon class="iconhelp" name="help-circle-outline" slot=""></ion-icon>
+    <div class="row">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" class="avatar" />
+    <div class="namemail">
+      <h3>Mariana</h3>
+      <ion-note>mariana@gmail.com</ion-note>
+  </div>
+</div>
+  <div>
+    <ion-button class="endereco" ><ion-icon name="location-outline"></ion-icon>LP-SP </ion-button>
+  </div>
+  </ion-content>
+</ion-menu>
 
-<ion-content [fullscreen]="true">
+<div class="ion-page" id="main-content">
 
-</ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <div class="imgtoolbar">
+        <img src="assets/Tema Claro.png" alt="" class="logo" >
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    Tap the button in the toolbar to open the menu.
+  </ion-content>]
+
+</div>
