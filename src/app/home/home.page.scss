@@ -1,12 +1,16 @@
 ///ion-menu
 
-
 .iconhelp {
   position: absolute;
   width: 8vw;
   height: 8vw;
   margin-left: 60vw;
   margin-top: 5vw;
+}
+
+.row{
+  flex-wrap: nowrap;
+  display: flex;
 }
 
 .avatar {
@@ -17,13 +21,33 @@
 }
 
 .endereco {
-  width: 200px;
+  width: 225px;
   --background: #14a686;
   font-size: 4.8vw;
+  margin-top: 10vw;
 }
 
 .endereco ion-icon {
   font-size: 5vw;
+}
+
+.name{
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 10vw;
+  margin-left: 3vw;
+}
+
+.email{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20vw;
+  margin-right: 20vw;
+}
+
+.pages{
+  margin-top: 10vw;
+  text-align: left;
 }
 
 ///ion-toolbar
