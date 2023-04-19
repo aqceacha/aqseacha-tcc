@@ -1,11 +1,7 @@
 ///ion-menu
 
-.iconhelp {
-  position: absolute;
-  width: 8vw;
-  height: 8vw;
-  margin-left: 60vw;
-  margin-top: 5vw;
+.help{
+  margin-top: 40vw;
 }
 
 .row{
@@ -30,11 +26,14 @@
   font-size: 5vw;
 }
 
-.name{
-  justify-content: flex-end;
+.namemail{
   display: flex;
   margin-top: 10vw;
   margin-left: 3vw;
+  ion-card-subtitle{
+    margin-top: 10vw;
+    margin-left: -26vw;
+  }
 }
 
 .email{
@@ -47,6 +46,10 @@
 .pages{
   margin-top: 10vw;
   text-align: left;
+
+  ion-text{
+    color: black;
+  }
 }
 
 ///ion-toolbar
@@ -56,8 +59,8 @@ ion-toolbar {
 }
 
 .logo {
-  width: 12vw;
-  height: 12vw;
+  width: 15vw;
+  height: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
