@@ -1,7 +1,7 @@
 ///ion-menu
 
 .help{
-  margin-top: 40vw;
+  margin-top: 60vw;
 }
 
 .row{
@@ -20,6 +20,7 @@
   width: 225px;
   font-size: 4.8vw;
   margin-top: 10vw;
+  --border-radius:3vw;
 }
 
 .endereco ion-icon {
@@ -32,7 +33,7 @@
   margin-left: 3vw;
   ion-card-subtitle{
     margin-top: 10vw;
-    margin-left: -26vw;
+    margin-left: -23vw;
   }
 }
 
@@ -50,6 +51,10 @@
   ion-text{
     color: black;
   }
+}
+
+.forward{
+  margin-left: 30vw;
 }
 
 ///ion-toolbar
