@@ -20,10 +20,10 @@
     </div>
 
     <div class="pages">
-      <ion-button fill="clear" ><ion-icon name="settings-outline" slot="start" ></ion-icon><ion-text>Configurações</ion-text></ion-button>
-      <ion-button fill="clear"><ion-icon name="location-outline" slot="start"></ion-icon><ion-text>Meus Endereços</ion-text></ion-button>
-      <ion-button fill="clear"><ion-icon name="cash-outline" slot="start" ></ion-icon><ion-text>Pagamentos</ion-text></ion-button>
-      <ion-button fill="clear"><ion-icon name="pricetag-outline" slot="start" ></ion-icon><ion-text>Pedidos</ion-text></ion-button>
+      <ion-button fill="clear" (click)="pagRoute('../configuracoes')" ><ion-icon name="settings-outline" slot="start" ></ion-icon><ion-text>Configurações</ion-text></ion-button>
+      <ion-button fill="clear" (click)="pagRoute('../meus-enderecos')"><ion-icon name="location-outline" slot="start"></ion-icon><ion-text>Meus Endereços</ion-text></ion-button>
+      <ion-button fill="clear" (click)="pagRoute('../pagamentos')"><ion-icon name="cash-outline" slot="start" ></ion-icon><ion-text>Pagamentos</ion-text></ion-button>
+      <ion-button fill="clear" (click)="pagRoute('../pedidos')"><ion-icon name="pricetag-outline" slot="start" ></ion-icon><ion-text>Pedidos</ion-text></ion-button>
       <ion-button fill="clear"><ion-icon name="call-outline" slot="start" ></ion-icon><ion-text>Verificar Telefone</ion-text></ion-button>
     </div>
     <ion-icon name="help-circle-outline" size="large" color="secondary" class="help"></ion-icon>
