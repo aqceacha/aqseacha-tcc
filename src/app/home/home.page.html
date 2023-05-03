@@ -14,17 +14,33 @@
     </div>
 
     <div>
-      <ion-button class="endereco" color="primary"  (click)="pagRoute('../meus-enderecos')"
-        ><ion-icon name="location-outline"></ion-icon>LP-SP<ion-icon name="chevron-forward" class="forward"></ion-icon>
+      <ion-button class="endereco" color="primary" (click)="pagRoute('../es-cidade')" ><ion-icon name="location-outline"></ion-icon>LP-SP<ion-icon name="chevron-forward" class="forward"></ion-icon>
       </ion-button>
     </div>
 
     <div class="pages">
       <ion-button fill="clear" (click)="pagRoute('../configuracoes')" ><ion-icon name="settings-outline" slot="start" ></ion-icon><ion-text>Configurações</ion-text></ion-button>
-      <ion-button fill="clear"><ion-icon name="location-outline" slot="start"></ion-icon><ion-text>Meus Endereços</ion-text></ion-button>
+      <ion-button fill="clear" (click)="pagRoute('../meus-enderecos')"><ion-icon name="location-outline" slot="start"></ion-icon><ion-text>Meus Endereços</ion-text></ion-button>
       <ion-button fill="clear" (click)="pagRoute('../pagamentos')"><ion-icon name="cash-outline" slot="start" ></ion-icon><ion-text>Pagamentos</ion-text></ion-button>
       <ion-button fill="clear" (click)="pagRoute('../pedidos')"><ion-icon name="pricetag-outline" slot="start" ></ion-icon><ion-text>Pedidos</ion-text></ion-button>
-      <ion-button fill="clear"><ion-icon name="call-outline" slot="start" ></ion-icon><ion-text>Verificar Telefone</ion-text></ion-button>
+      <ion-button fill="clear"  expand="block" (click)="setOpen(true)"><ion-icon name="call-outline" slot="start" ></ion-icon><ion-text>Verificar Telefone</ion-text></ion-button>
+      <ion-modal [isOpen]="isModalOpen">
+        <div class="transparent-modal">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Verificar telefone</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpen(false)">Close</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+
+          </ion-content>
+        </ng-template>
+      </div>
+      </ion-modal>
     </div>
     <ion-icon name="help-circle-outline" size="large" color="secondary" class="help"></ion-icon>
 
@@ -45,6 +61,7 @@
   </ion-header>
 
   <ion-content class="ion-padding">
-    Tap the button in the toolbar to open the menu. </ion-content
+
+    </ion-content
   >
 </div>

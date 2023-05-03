@@ -78,4 +78,25 @@ ion-toolbar {
   align-items: center;
 }
 
+///modal
+
+ ion-modal{
+  width: 80vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  --ion-backdrop-color: black;
+}
+
+.transparent-modal{
+  --background:black;
+
+  ion-content{
+    --background:transparent;
+  }
+}
+
 ///ion-content
+

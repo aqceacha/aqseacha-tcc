@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'pedidos',
     loadChildren: () => import('./pedidos/pedidos.module').then( m => m.PedidosPageModule)
   },
+  {
+    path: 'es-cidade',
+    loadChildren: () => import('./es-cidade/es-cidade.module').then( m => m.EsCidadePageModule)
+  },
 
 ];
 
