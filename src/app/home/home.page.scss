@@ -69,6 +69,8 @@ ion-toolbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:50px;
+  cursor: pointer;
 }
 
 .imgtoolbar {
@@ -99,4 +101,11 @@ ion-toolbar {
 }
 
 ///ion-content
+
+.logoapp{
+  width: 80vw;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+}
 
