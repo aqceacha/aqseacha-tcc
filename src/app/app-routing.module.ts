@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'meus-enderecos',
     loadChildren: () => import('./meus-enderecos/meus-enderecos.module').then( m => m.MeusEnderecosPageModule)
   },
@@ -29,6 +30,14 @@ const routes: Routes = [
   {
     path: 'es-cidade',
     loadChildren: () => import('./es-cidade/es-cidade.module').then( m => m.EsCidadePageModule)
+  },
+  {
+    path: 'cliente-data',
+    loadChildren: () => import('./cliente-data/cliente-data.module').then( m => m.ClienteDataPageModule)
+  },
+  {
+    path: 'cliente-data',
+    loadChildren: () => import('./cliente-data/cliente-data.module').then( m => m.ClienteDataPageModule)
   },
 
 ];

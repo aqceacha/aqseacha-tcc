@@ -63,7 +63,18 @@
   <ion-content class="ion-padding">
 
     <img src="assets/logoapp.png" alt="" class="logoapp" >
+    <ion-list >
+      <ion-item *ngFor="let cliente of results" (click)="showInfoModal(cliente)">
+        <ion-label>
+          {{ cliente.nomecli }}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-card *ngIf="results.length === 0">
+      <ion-card-content>
+        <ion-label>Você ainda não tem nenhum contato.</ion-label>
+      </ion-card-content>
+    </ion-card>
 
-    </ion-content
-  >
+    </ion-content>
 </div>
