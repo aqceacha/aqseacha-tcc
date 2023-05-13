@@ -103,9 +103,22 @@ ion-toolbar {
 ///ion-content
 
 .logoapp{
-  width: 80vw;
+  width: 70vw;
   height: 40vw;
+}
+
+.anuncio{
+  margin-top: 7vw;
+}
+
+.imgcli{
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+}
+
+.cliente{
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 

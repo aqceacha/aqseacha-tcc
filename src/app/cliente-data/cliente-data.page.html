@@ -1,9 +1,43 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>cliente-data</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cliente</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <div *ngIf="cliente">
+  <div class="ion-text-center">
+    <img
+      src="{{ cliente.imagecli}}"
+      alt=""
+    />
+  </div>
+
+  <ion-card-header>
+    <ion-card-title>{{ cliente.apelidocli }}</ion-card-title>
+  </ion-card-header>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+    <ion-label>{{ cliente.nomecli }}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="at-outline" slot="start"></ion-icon>
+    <ion-label>{{ cliente.emailcli }}</ion-label>
+  </ion-item>
+
+</ion-card>
+  <div *ngIf="!cliente" class="failed">
+    <ion-icon color="danger" name="sad-outline"></ion-icon>
+    <p color="danger">
+      Não foi possível carregar sua conta! <br> <strong>Reinicie a aplicação...</strong></p>
+    <ion-button color="dark" (click)="goToRoute('home')">Voltar para Home</ion-button>
+  </div>
+</div>
 
 </ion-content>

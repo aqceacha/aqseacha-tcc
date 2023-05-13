@@ -27,6 +27,7 @@ export class HomePage {
     {
       idcli: 1,
   nomecli: 'Mariana',
+  imagecli: 'https://64.media.tumblr.com/ca9ad155add866935adca392ac99b337/ab7e1aea19a5e04e-c5/s540x810/8c35fd9ae76f681db30b252d9e27a693c846111a.jpg',
   emailcli: 'mariana@gmail.com',
   senhacli: '123123123',
   apelidocli: 'Mari',
@@ -38,7 +39,55 @@ export class HomePage {
   documentocli: '1908',
   idestado: 1,
   idcidade: 1
-    }
+    },
+    {
+      idcli: 2,
+  nomecli: 'Vitor',
+  imagecli: 'https://akamai.sscdn.co/gcs/cifra-blog/pt/wp-content/uploads/2021/12/ad57cb9-guitarra-worship.jpg',
+  emailcli: 'vitao@gmail.com',
+  senhacli: '123123123',
+  apelidocli: 'Vitão',
+  nascimentocli: '??/??/2005',
+  generocli: 'Masculino',
+  telefonecli: '999898',
+  enderecocli: 'apartamento',
+  complementocli: '11',
+  documentocli: '1098',
+  idestado: 1,
+  idcidade: 1
+    },
+    {
+    idcli: 3,
+    nomecli: 'Victor',
+    imagecli: 'https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2022/05/luffy-one-piece.webp?fit=1200%2C675&ssl=1',
+    emailcli: 'hero@gmail.com',
+    senhacli: '2222222',
+    apelidocli: 'Vitão',
+    nascimentocli: '03/06/2005',
+    generocli: 'Masculino',
+    telefonecli: '999898',
+    enderecocli: 'casa',
+    complementocli: '',
+    documentocli: '0902',
+    idestado: 1,
+    idcidade: 1
+      },
+          {
+    idcli: 5,
+    nomecli: 'Ariane',
+    imagecli: 'https://m.media-amazon.com/images/I/81hZXwAi55L.jpg',
+    emailcli: 'ariane@gmail.com',
+    senhacli: '2242122',
+    apelidocli: 'Ari',
+    nascimentocli: '??/??/2005',
+    generocli: 'Feminino',
+    telefonecli: '009398',
+    enderecocli: 'apartamento',
+    complementocli: '22',
+    documentocli: '9736',
+    idestado: 1,
+    idcidade: 1
+      }
   ];
 
   public results = [...this.clientes];
@@ -51,7 +100,7 @@ export class HomePage {
 
   showInfoModal(cliente: ClienteList) {
     this.dataService.setData('cliente', cliente);
-    this.router.navigateByUrl('/cliente-page');
+    this.router.navigateByUrl('/cliente-data');
   }
 
 

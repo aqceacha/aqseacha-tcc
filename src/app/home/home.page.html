@@ -60,21 +60,35 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content class="ion-padding">
+  <ion-content>
 
-    <img src="assets/logoapp.png" alt="" class="logoapp" >
-    <ion-list >
-      <ion-item *ngFor="let cliente of results" (click)="showInfoModal(cliente)">
-        <ion-label>
+    <div class="ion-text-center anuncio">
+    <img src="assets/logoapp.png" alt="" class="logoapp">
+    </div>
+
+
+
+      <ion-card class="cliente">
+      <ion-item *ngFor="let cliente of results" (click)="showInfoModal(cliente)" >
+        <ion-label class="ion-text-center">
+          <div class=" cliente">
+            <img
+              src="{{ cliente.imagecli}}"
+              alt="" class="imgcli"
+            />
+          </div>
           {{ cliente.nomecli }}
         </ion-label>
       </ion-item>
-    </ion-list>
+    </ion-card>
+
+
     <ion-card *ngIf="results.length === 0">
       <ion-card-content>
         <ion-label>Você ainda não tem nenhum contato.</ion-label>
       </ion-card-content>
     </ion-card>
+
 
     </ion-content>
 </div>

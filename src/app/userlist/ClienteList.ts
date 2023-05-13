@@ -1,6 +1,7 @@
 export interface ClienteList {
   idcli: number,
   nomecli: string,
+  imagecli: string,
   emailcli: string,
   senhacli: string,
   apelidocli: string,
