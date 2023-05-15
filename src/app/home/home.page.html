@@ -69,9 +69,9 @@
 
 
       <ion-card class="cliente">
-      <ion-item *ngFor="let cliente of results" (click)="showInfoModal(cliente)" >
+      <ion-item *ngFor="let cliente of resultscli" (click)="showInfoModalCli(cliente)" >
         <ion-label class="ion-text-center">
-          <div class=" cliente">
+          <div class="cliente">
             <img
               src="{{ cliente.imagecli}}"
               alt="" class="imgcli"
@@ -82,13 +82,30 @@
       </ion-item>
     </ion-card>
 
+    <!--  -->
 
-    <ion-card *ngIf="results.length === 0">
+    <ion-card class="vendedor">
+      <ion-item *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)" >
+        <ion-label class="ion-text-center">
+          <div class="vendedor">
+            <img
+              src="{{ vendedor.imageven}}"
+              alt="" class="imgven"
+            />
+          </div>
+          {{ vendedor.nomeven }}
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+
+    <!--
+      <ion-card *ngIf="results.length === 0">
       <ion-card-content>
         <ion-label>Você ainda não tem nenhum contato.</ion-label>
       </ion-card-content>
     </ion-card>
-
+    -->
 
     </ion-content>
 </div>

@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'cliente-data',
     loadChildren: () => import('./cliente-data/cliente-data.module').then( m => m.ClienteDataPageModule)
+  },  {
+    path: 'vendedor-data',
+    loadChildren: () => import('./vendedor-data/vendedor-data.module').then( m => m.VendedorDataPageModule)
   },
+
 
 ];
 
