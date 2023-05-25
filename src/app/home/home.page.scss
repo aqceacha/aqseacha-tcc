@@ -16,16 +16,13 @@
   margin-top: 5vw;
 }
 
+
 .endereco {
-  width: 225px;
-  font-size: 4.8vw;
+  font-size: 3.8vw;
   margin-top: 10vw;
   --border-radius:3vw;
 }
 
-.endereco ion-icon {
-  font-size: 5vw;
-}
 
 .namemail{
   display: flex;
@@ -46,16 +43,15 @@
 
 .pages{
   margin-top: 10vw;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 
   ion-text{
     color: black;
   }
 }
 
-.forward{
-  margin-left: 30vw;
-}
 
 ///ion-toolbar
 

@@ -40,22 +40,6 @@ export class HomePage {
   documentocli: '1908',
   idestado: 1,
   idcidade: 1
-    },
-    {
-      idcli: 2,
-  nomecli: 'Vitor',
-  imagecli: 'https://akamai.sscdn.co/gcs/cifra-blog/pt/wp-content/uploads/2021/12/ad57cb9-guitarra-worship.jpg',
-  emailcli: 'vitao@gmail.com',
-  senhacli: '123123123',
-  apelidocli: 'Vitão',
-  nascimentocli: '??/??/2005',
-  generocli: 'Masculino',
-  telefonecli: '999898',
-  enderecocli: 'apartamento',
-  complementocli: '11',
-  documentocli: '1098',
-  idestado: 1,
-  idcidade: 1
     }
   ];
 
