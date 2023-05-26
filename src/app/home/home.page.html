@@ -41,17 +41,12 @@
   </ion-header>
 
   <ion-content>
-
     <div class="ion-text-center anuncio">
     <img src="assets/logoapp.png" alt="" class="logoapp">
     </div>
 
-
-
-
-
     <ion-card class="vendedor">
-      <ion-item *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)" >
+      <ion-item lines="none" *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)" >
         <ion-label class="ion-text-center">
           <div class="vendedor">
             <img
@@ -64,6 +59,7 @@
       </ion-item>
     </ion-card>
 
+    <app-carousel [data]="resultsven"></app-carousel>
 
 
     <!--
