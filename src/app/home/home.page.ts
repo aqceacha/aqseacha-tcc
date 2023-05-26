@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
+
   constructor(private router: Router, private dataService: DataService) {}
 
   pagRoute(route:string){
@@ -94,7 +95,43 @@ export class HomePage {
   idestado: 1,
   idcidade: 1,
   idramo: 2
-    }
+    },
+    {
+    idven: 3,
+    nomeven: 'Victor',
+    imageven: 'https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png',
+    emailven: 'vitao@gmail.com',
+    senhaven: '123123123',
+    apelidoven: 'Vitão',
+    nascimentoven: '??/??/2005',
+    generoven: 'Masculino',
+    telefoneven: '999898',
+    enderecoven: 'apartamento',
+    complementoven: '11',
+    documentoven: '1098',
+    comprovven: '233289471',
+    idestado: 1,
+    idcidade: 1,
+    idramo: 3
+      },
+      {
+        idven: 4,
+        nomeven: 'Gabi',
+        imageven: 'https://i.pinimg.com/564x/6c/f8/bf/6cf8bfe2d5f8c3f3289c14b1157d3508.jpg',
+        emailven: 'gabriela@gmail.com',
+        senhaven: '123123123',
+        apelidoven: 'Vitão',
+        nascimentoven: '??/??/2005',
+        generoven: 'Masculino',
+        telefoneven: '999898',
+        enderecoven: 'apartamento',
+        complementoven: '11',
+        documentoven: '1098',
+        comprovven: '233289471',
+        idestado: 1,
+        idcidade: 1,
+        idramo: 3
+      }
   ];
 
   public resultsven = [...this.vendedores];
@@ -109,6 +146,9 @@ export class HomePage {
     this.dataService.setData('vendedor', vendedor);
     this.router.navigateByUrl('/vendedor-data');
   }
+
+
+
 
 }
 
