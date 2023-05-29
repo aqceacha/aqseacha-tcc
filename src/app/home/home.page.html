@@ -28,8 +28,11 @@
   </ion-content>
 </ion-menu>
 
+
 <div class="ion-page" id="main-content">
   <ion-header>
+
+
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button color="primary"></ion-menu-button>
@@ -41,34 +44,26 @@
   </ion-header>
 
   <ion-content>
+
+    <app-maincarousel></app-maincarousel>
+
+
     <div class="ion-text-center anuncio">
     <img src="assets/logoapp.png" alt="" class="logoapp">
     </div>
 
-    <ion-card class="vendedor">
-      <ion-item lines="none" *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)" >
-        <ion-label class="ion-text-center">
-          <div class="vendedor">
-            <img
-              src="{{ vendedor.imageven}}"
-              alt="" class="imgven"
-            />
-          </div>
-          {{ vendedor.nomeven }}
-        </ion-label>
-      </ion-item>
-    </ion-card>
-
-    <app-carousel [data]="resultsven"></app-carousel>
+    <!--<ion-card class="vendedor" *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)">-->
+        <app-carousel [data]="resultsven"  ></app-carousel>
+    <!--</ion-card>-->
 
 
-    <!--
-      <ion-card *ngIf="results.length === 0">
+
+
+      <!--<ion-card *ngIf="results.length === 0">
       <ion-card-content>
-        <ion-label>Você ainda não tem nenhum contato.</ion-label>
+        <ion-label>Ocorreu um problema, reinicie a aplicação e tente novamente.</ion-label>
       </ion-card-content>
-    </ion-card>
-    -->
+    </ion-card>-->
 
 
     </ion-content>

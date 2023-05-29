@@ -1,4 +1,5 @@
 import { CarouselComponent } from '../components/carousel/carousel.component';
+import {  MaincarouselComponent } from '../components/maincarousel/maincarousel.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -15,7 +16,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePageRoutingModule,
 
   ],
-  declarations: [HomePage, CarouselComponent]
+  declarations: [HomePage, CarouselComponent, MaincarouselComponent]
 })
 export class HomePageModule {}
 
