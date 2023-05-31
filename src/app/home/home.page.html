@@ -30,34 +30,20 @@
 
 
 <div class="ion-page" id="main-content">
-  <ion-header>
 
+  <div class="toolbar">
+  <ion-menu-button color="primary"></ion-menu-button>
 
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button color="primary"></ion-menu-button>
-      </ion-buttons>
-      <div class="imgtoolbar">
-        <img src="assets/lupablue.png" alt="" class="logo" />
-      </div>
-    </ion-toolbar>
-  </ion-header>
+  <ion-button fill="clear"><ion-icon name="settings-outline"></ion-icon></ion-button>
+  </div>
 
   <ion-content>
 
-    <app-maincarousel></app-maincarousel>
 
-
-    <div class="ion-text-center anuncio">
-    <img src="assets/logoapp.png" alt="" class="logoapp">
-    </div>
 
     <!--<ion-card class="vendedor" *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)">-->
-        <app-carousel [data]="resultsven"  ></app-carousel>
+        <app-carousel [data]="resultsven"></app-carousel>
     <!--</ion-card>-->
-
-
-
 
       <!--<ion-card *ngIf="results.length === 0">
       <ion-card-content>
@@ -65,6 +51,7 @@
       </ion-card-content>
     </ion-card>-->
 
+    <app-maincarousel></app-maincarousel>
 
     </ion-content>
 </div>

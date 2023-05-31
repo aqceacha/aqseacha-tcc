@@ -1,11 +1,12 @@
 
-.wrapper{
+.mainwrapper{
   display: flex;
   max-width: 100%;
   position: relative;
   margin-inline: 1rem;
+  margin-top: 5vw;
 }
-.wrapper i{
+.mainwrapper i{
   top: 50%;
   height: 44px;
   width: 44px;
@@ -20,39 +21,39 @@
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+.mainwrapper i:active{
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover{
+.mainwrapper i:hover{
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+.mainwrapper i:first-child{
   left: -22px;
 }
-.wrapper i:last-child{
+.mainwrapper i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
+.mainwrapper .maincarousel{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.carousel.dragging{
+.maincarousel.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+.maincarousel.dragging img{
   pointer-events: none;
 }
-.carousel img{
+.maincarousel img{
   height: 100%;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: 100vw;
 }
-.carousel img:first-child{
+.maincarousel img:first-child{
   margin-left: 0px;
 }
