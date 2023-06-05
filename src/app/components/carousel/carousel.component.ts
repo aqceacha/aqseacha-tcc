@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+let loading = false;
+let id = 0;
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -9,12 +12,19 @@ export class CarouselComponent implements OnInit {
 
   @Input()
   data: any = [];
+  id = 0;
 
   constructor() { }
 
-  ngOnInit() {
-    const carousel: any = document.querySelector(".carousel"),
-      arrowIcons: any = document.querySelectorAll(".wrapper i");
+  loadSlides() {
+    loading = true;
+    id += 1;
+    this.id = id;
+    let carousel: any = document.getElementById("carousel" + id),
+      arrowIcons: any = document.getElementById("wrapper" + id);
+    console.log(arrowIcons)
+    arrowIcons = [arrowIcons.childNodes[0], arrowIcons.lastChild]
+    console.log(arrowIcons);
     let  firstImg = carousel.querySelectorAll("img")[0]
     let isDragStart = false, isDragging = false, prevPageX: any, prevScrollLeft: any, positionDiff: any;
     const showHideIcons = () => {
@@ -75,6 +85,21 @@ export class CarouselComponent implements OnInit {
     carousel.addEventListener("touchmove", dragging);
     document.addEventListener("mouseup", dragStop);
     carousel.addEventListener("touchend", dragStop);
+    loading = false;
+  }
+
+  trySlides() {
+    if (loading) {
+      setTimeout(this.trySlides, 1000);
+      return;
+    }
+    this.loadSlides();
+  }
+
+  async ngOnInit() {
+    setTimeout(() => {
+      this.trySlides()
+    }, 1000)
   }
 
 }

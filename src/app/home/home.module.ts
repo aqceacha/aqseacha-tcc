@@ -1,9 +1,8 @@
 import { CarouselComponent } from '../components/carousel/carousel.component';
-import {  MaincarouselComponent } from '../components/maincarousel/maincarousel.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+//import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
@@ -11,12 +10,11 @@ import { HomePageRoutingModule } from './home-routing.module';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
+    //FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-
+    HomePageRoutingModule
   ],
-  declarations: [HomePage, CarouselComponent, MaincarouselComponent]
+  declarations: [HomePage, CarouselComponent]
 })
 export class HomePageModule {}
 
