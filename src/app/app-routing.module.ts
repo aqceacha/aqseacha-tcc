@@ -32,14 +32,6 @@ const routes: Routes = [
     loadChildren: () => import('./es-cidade/es-cidade.module').then( m => m.EsCidadePageModule)
   },
   {
-    path: 'cliente-data',
-    loadChildren: () => import('./cliente-data/cliente-data.module').then( m => m.ClienteDataPageModule)
-  },
-  {
-    path: 'cliente-data',
-    loadChildren: () => import('./cliente-data/cliente-data.module').then( m => m.ClienteDataPageModule)
-  },
-  {
     path: 'vendedor-data',
     loadChildren: () => import('./vendedor-data/vendedor-data.module').then( m => m.VendedorDataPageModule)
   },
