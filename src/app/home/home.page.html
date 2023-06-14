@@ -6,8 +6,11 @@
         class="avatar"
       />
       <div class="namemail">
-        <ion-card-title><strong>{{cliente.nomecli}}</strong></ion-card-title><br>
-        <ion-card-subtitle><strong>{{cliente.emailcli}}</strong></ion-card-subtitle>
+
+        <ion-label>
+          <h1>{{cliente.nomecli}}</h1>
+          <p>{{cliente.emailcli}}</p>
+        </ion-label>
 
       </div>
     </div>
@@ -37,12 +40,14 @@
   <ion-button fill="clear"><ion-icon name="settings-outline"></ion-icon></ion-button>
   </div>
 
+
+
   <ion-content>
 
 
 
     <!--<ion-card class="vendedor" *ngFor="let vendedor of resultsven" (click)="showInfoModalVen(vendedor)">-->
-        <app-carousel [data]="resultsven"></app-carousel>
+        <app-carousel [data]="resultsimg"></app-carousel>
     <!--</ion-card>-->
 
       <!--<ion-card *ngIf="results.length === 0">

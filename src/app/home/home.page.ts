@@ -3,6 +3,7 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { ClienteList } from '../userlist/ClienteList';
 import { VendedorList } from '../userlist/VendedorList';
+import { ImageList } from '../userlist/ImageList';
 import { DataService } from '../service/data.service';
 import { Router } from '@angular/router';
 
@@ -57,7 +58,7 @@ export class HomePage {
     this.router.navigateByUrl('/cliente-data');
   }
 
-// Divisória
+// Vendedor
 
   public vendedores: VendedorList[] = [
     {
@@ -163,6 +164,27 @@ export class HomePage {
   showInfoModalVen(vendedor: VendedorList) {
     this.dataService.setData('vendedor', vendedor);
     this.router.navigateByUrl('/vendedor-data');
+  }
+
+  // Images
+
+  public images: ImageList[] = [
+    {
+      nomeimg: 'Aqseacha Logo',
+      image: '/assets/aqseachalogo.png'
+    },
+    {
+      nomeimg: 'Aqseacha Logo',
+      image: '/assets/logoapp.png'
+    }
+  ];
+
+  public resultsimg = [...this.images];
+  public orderedimg = [];
+
+  handleChangeImg(eventimg: any) {
+    const query = eventimg.target.value.toLowerCase();
+    this.resultsimg = this.images.filter(v => v.nomeimg.toLowerCase().indexOf(query) > -1);
   }
 
 
