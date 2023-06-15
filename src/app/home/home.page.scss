@@ -1,9 +1,11 @@
 ///ion-menu
 
-
 .help{
-  margin-top: 60vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
+
 
 .row{
   flex-wrap: nowrap;
@@ -19,10 +21,13 @@
 
 
 .endereco {
-  font-size: 3.8vw;
+
   margin-top: 10vw;
+  font-size: 3.8vw;
   --border-radius:3vw;
+
 }
+
 
 
 .namemail{
